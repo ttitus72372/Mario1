@@ -14,26 +14,18 @@ printPyramid(5);
  *      ######
  */
 function printPyramid(height) {
-  let x = height;
+  let x = height-1;
   let count = 0;
-  let brick = "#";
-  let base = "##";
-  while(count < x){
-    if(count == 0){
-      console.log(base)
-    }
-    else if(count > 0){
-      let newlayer = 0;
-      while(newlayer < count){
-        step = base.concat(brick);
-        newlayer++;
-      }
-      console.log(step)
-    }
-    count++;
+  let pyramid = ["##"];
+  let brick ="#";
+  
+  while(pyramid.length < x){
+    let current_layer = pyramid[pyramid.length - 1]
+    let build = current_layer.concat(brick)
+    pyramid.push(build);
   }
-
-    // TODO
-    // print that pyramid!
-
+  console.log(pyramid)
+  for(i=0;i<pyramid.length;i++){
+    console.log(pyramid[i])
+  }
 }
