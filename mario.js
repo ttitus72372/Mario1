@@ -1,5 +1,5 @@
 
-printPyramid(5);
+printPyramid(7);
 
 
 /*
@@ -24,7 +24,7 @@ function printPyramid(height) {
     let build = current_layer.concat(brick)
     pyramid.push(build);
   }
-  console.log(pyramid)
+  //console.log(pyramid)
   for(i=0;i<pyramid.length;i++){
     console.log(pyramid[i])
   }
