@@ -1,6 +1,4 @@
-
 printPyramid(7);
-
 function printPyramid(height) {
   let x = height;
   let pyramid = ["##"];
