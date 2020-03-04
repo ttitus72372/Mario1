@@ -7,7 +7,6 @@ function printPyramid(height) {
   let brick ="#";
   
   while(pyramid.length < x){
-
     let current_layer = pyramid[pyramid.length - 1]
     let build = current_layer.concat(brick)
     pyramid.push(build);
