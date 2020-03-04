@@ -28,10 +28,10 @@ function printPyramid(height) {
   //console.log(pyramid)
   for(i=0;i<pyramid.length;i++){
     let count = height - i - 1
-    rowStr = ""
+    space = ""
     for (var z = 0; z < count; z++) {
-      rowStr += " ";
+      space += " ";
     }
-    console.log(rowStr + pyramid[i])
+    console.log(space + pyramid[i])
   }
 }
