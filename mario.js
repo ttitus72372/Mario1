@@ -14,7 +14,7 @@ printPyramid(7);
  *      ######
  */
 function printPyramid(height) {
-  let x = height-1;
+  let x = height;
   let pyramid = ["##"];
   let brick ="#";
   
