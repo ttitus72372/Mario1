@@ -15,17 +15,23 @@ printPyramid(7);
  */
 function printPyramid(height) {
   let x = height-1;
-  let count = 0;
   let pyramid = ["##"];
   let brick ="#";
   
+  
   while(pyramid.length < x){
+
     let current_layer = pyramid[pyramid.length - 1]
     let build = current_layer.concat(brick)
     pyramid.push(build);
   }
   //console.log(pyramid)
   for(i=0;i<pyramid.length;i++){
-    console.log(pyramid[i])
+    let count = height - i - 1
+    rowStr = ""
+    for (var z = 0; z < count; z++) {
+      rowStr += " ";
+    }
+    console.log(rowStr + pyramid[i])
   }
 }
